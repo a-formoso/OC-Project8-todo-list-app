@@ -81,11 +81,27 @@
 		callback = callback || function () {};
 
 		// Generate an ID
-	    var newId = ""; 
+	    /*var newId = ""; 
 	    var charset = "0123456789";
 
         for (var i = 0; i < 6; i++) {
      		newId += charset.charAt(Math.floor(Math.random() * charset.length));
+		} */
+
+		// create unique ID
+		var newId = "", charset = "0123456789", isDuplicate = false;
+
+		while (!isDuplicate) {
+			newId = "";
+			for (var i = 0; i < 6; i++) {
+				newId += charset.charAt(Math.floor(Math.random() * charset.length));
+			}
+			isDuplicate = true;
+			for (var i = 0; i < todos.length; i++) {
+				if (todos[i].id == newId) {
+					isDuplicate = false;
+				}
+			}
 		}
 
 		// If an ID was actually given, find the item and update each property
