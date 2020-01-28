@@ -15,6 +15,6 @@
 #### By [*Alexandre Formoso*](https://aformoso.dev) - November 2019
 
 ### See full application 
-#### :point_right: [https://github.com/alexandreformoso/OC-Project8-todo-list-app/](https://github.com/alexandreformoso/OC-Project8-todo-list-app/)
+#### :point_right: [https://alexandreformoso.github.io/OC-Project8-todo-list-app/](https://github.com/alexandreformoso/OC-Project8-todo-list-app/)
 
 ![game printscreen](/img/to-do-img.png)
