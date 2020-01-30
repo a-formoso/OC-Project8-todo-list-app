@@ -15,6 +15,8 @@
 #### By [*Alexandre Formoso*](https://aformoso.dev) - January 2020
 
 ### Preview application 
+#### :point_right: [https://alexandreformoso.github.io/OC-Project8-todo-list-app/](https://alexandreformoso.github.io/OC-Project8-todo-list-app/)
+Alternatively
 * Run npm install
 * Open index.html file in your browser
 
