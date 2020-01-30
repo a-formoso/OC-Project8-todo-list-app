@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	
+		<meta charset="utf-8"> 
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1  shrink-to-fit=no">
+		<title>To-do App Documentation</title>
+		<!-- Bootstrap CDN -->
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/styles.css">
+		<!-- Font Awesome icons -->
+    	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    	<!-- Google Fonts -->
+    	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+    	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<section class="outer-container">
+			<section class="inner-container">
+				<header id="header" class=" container">
+					<h1>Technical Documentation</h1>
+					<p><a href="https://aformoso.dev">Alexandre Formoso</a> | January 2020</p>
+				</header>
+				<section id="main" class="container">
+					<div class="row">
+						<div class="navigation-column col-xs-12 col-md-4">
+							<ul class="navigation-menu">
+								<li><button id="openByDefault" class="tablinks" onclick="openContent(event, 'Intro')">Introduction</button></li>
+								<li><button class="tablinks" onclick="openContent(event, 'Starting')">Getting Started</button></li>
+								<li><button class="tablinks" onclick="openContent(event, 'Bugs')">Fixing bugs</button></li>
+								<li><button class="tablinks" onclick="openContent(event, 'Testing')">Adding Tests</button></li>
+								<li><button class="tablinks" onclick="openContent(event, 'Auditing')">Analysing Performance</button></li>
+							</ul>
+						</div>
+						<!-- content -->
+						<div class="content-column col-xs-12 col-md-8">
+							<div id="Intro" class="tab-content">
+							  <h2 class="content-title">Introduction</h2>
+							  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+							</div>
+
+							<div id="Starting" class="tab-content">
+							  <h2 class="content-title">Getting Started</h2>
+							  <p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+							  <h5>App preview</h5>
+							  <ul>
+							  	<li>Instruction 1</li>
+							  	<li>Instruction 2</li>
+							  </ul>
+							  <h5>App features</h5>
+							  <p>This application should allow users to the add, edit, delete todo; mark a todo as completed; toggle all todo's as completed; filter todo's; and clear all completed todo's.</p>
+							</div>
+
+							<div id="Bugs" class="tab-content">
+							  <h2 class="content-title">Fixing Bugs</h2>
+							  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+							</div>
+
+							<div id="Testing" class="tab-content">
+							  <h2 class="content-title">Adding Tests</h2>
+							  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+							</div>
+
+							<div id="Auditing" class="tab-content">
+							  <h2 class="content-title">Analysing Performance</h2>
+							  <p>Here, we are going to measure and analyse load and performance of our todo app against a <a href="http://todolistme.net/">competitor's</a>. We will then see ways in which we can optimise perfomance for end users.</p>
+							  <h4>Our todo app</h4>
+							  <div class="todo-image-wrapper"><img src="../img/to-do-img.png"/></div><br/>
+							  <h5>Startup time (DevTools)</h5>
+							  <p>The size of our scripts is small, which means less download time. The app loads in just 99ms.</p>
+							  <div style="width: auto; height: 30px;"><img src="img/todo-load-time.png"/></div><br/>
+							  <h5>Runtime performance</h5>
+							  <p>The code in our app seems well optimised: not many unecessary DOM repaints, not many HTTP round trips, and no signs of memory leaks either. The app performs well on both desktop and mobile devices.</p>
+							  <h4>Competitor's todo app</h4><br/>
+							  <h5>Startup time</h5>
+							  <p>The startup time indicates that....</p>
+							  <h5>Runtime performance</h5>
+							  <p>One possible solution for this could mean finding code alternatives for performance enhancement. E.g.: Using a more efficient Loop methods.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+
+		<!-- JavaScript, jQuery CDN-->
+		<script src="js/doc.js"></script>
+    	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	</body>
+</html>
