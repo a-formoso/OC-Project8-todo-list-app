@@ -3,14 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<title>To-do list app</title>
-		<link rel=preconnect" href="node_modules/todomvc-common/base.css">
+		<link rel="stylesheet" href="node_modules/todomvc-common/base.css">
 		<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
 	</head>
 	<body>
 		<section class="todoapp">
 			<header class="header">
 				<h1>todos</h1>
-				<input class="new-todo" placeholder="What needs to be done?" autofocus>
+				<label for="todo">Add todo</label>
+				<input id="todo" class="new-todo" placeholder="What needs to be done?" autofocus>
 			</header>
 			<section class="main">
 				<input class="toggle-all" type="checkbox">
