@@ -70,18 +70,47 @@
 
 							<div id="Auditing" class="tab-content">
 							  <h2 class="content-title">Analysing Performance</h2>
-							  <p>Here, we are going to measure and analyse load and performance of our todo app against a <a href="http://todolistme.net/">competitor's</a>. We will then see ways in which we can optimise perfomance for end users.</p>
+							  <p>Here, we are going to measure load and performance of <a id="underline1" target="_blank" href="https://alexandreformoso.github.io/OC-Project8-todo-list-app/">our todo app</a> against a <a id="underline2" target="_blank" href="http://todolistme.net/">competitor's</a> using DevTools. We will then see ways in which we can optimise perfomance for end users.</p>
+							  <p style="padding-top: 10px;"><small><b>Please note</b> that gatherings may differ from user to user, depending on one's set up. This audit was run on a 64-bit Windows 10 machine, using the Incognito mode (to avoid noise) of the Google Chrome v.79 (chrome://version/) browser.</small></p>
 							  <h4>Our todo app</h4>
-							  <div class="todo-image-wrapper"><img src="../img/to-do-img.png"/></div><br/>
-							  <h5>Startup time (DevTools)</h5>
-							  <p>The size of our scripts is small, which means less download time. The app loads in just 99ms.</p>
-							  <div style="width: auto; height: 30px;"><img src="img/todo-load-time.png"/></div><br/>
-							  <h5>Runtime performance</h5>
+							  <div class="todo-image-wrapper"><a target="_blank" 
+							  	href="https://alexandreformoso.github.io/OC-Project8-todo-list-app/"><img src="../img/to-do-img.png"/></a></div><br/>
+							  <h5>Startup Time</h5>
+							  <p >Looking at the network log (below), we realise that only 12 requests are made in the 22.0KB of downloaded (or transferred) data, taking only 224ms of load time.<br><br>
+							  	<b><em>Network Trottling: Slow 3G </em></b><br> For mobile device users with slow connectivity, load time simulated shows 4.59s.</p>
+							  <div class="modal-img-wrapper border-radius">
+							  	<div class="img-box col-xs-12 col-md-6">
+							  		<!-- Trigger the Modal -->
+							  		<img class="scaleImg" src="img/load-our-todo.png" title="click to scale" alt="Online"/>
+							  		<!-- The Modal -->
+							  		<div id="myModal" class="modal">
+							  			<!-- The Close Button -->
+							  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+							  			<!-- Modal Content (The Image) -->
+							  			<img class="modal-content border-radius" id="img01"/>
+							  			<!-- Modal Caption (Image Text) -->
+							  			<div id="caption"></div>
+							  		</div>
+							  	</div>
+								<div class="img-box col-xs-12 col-md-6">
+									<img class="scaleImg" src="img/mobileLoad-our-todo.png" title="click to scale" alt="Slow 3G"/>
+							  		<div id="myModal" class="modal">
+							  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+							  			<img class="modal-content" id="img01">
+							  			<div id="caption"></div>
+									</div>
+								</div>
+							  </div><br>
+							  
+							 
+							  
+							  
+							  <h5>Runtime Performance</h5>
 							  <p>The code in our app seems well optimised: not many unecessary DOM repaints, not many HTTP round trips, and no signs of memory leaks either. The app performs well on both desktop and mobile devices.</p>
 							  <h4>Competitor's todo app</h4><br/>
-							  <h5>Startup time</h5>
+							  <h5>Startup Time</h5>
 							  <p>The startup time indicates that....</p>
-							  <h5>Runtime performance</h5>
+							  <h5>Runtime Performance</h5>
 							  <p>One possible solution for this could mean finding code alternatives for performance enhancement. E.g.: Using a more efficient Loop methods.</p>
 							</div>
 						</div>
@@ -91,7 +120,7 @@
 		</section>
 
 		<!-- JavaScript, jQuery CDN-->
-		<script src="js/doc.js"></script>
     	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    	<script src="js/doc.js"></script>
 	</body>
 </html>
