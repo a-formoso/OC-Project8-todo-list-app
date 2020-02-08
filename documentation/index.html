@@ -38,8 +38,8 @@
 							<li><button class="tablinks" onclick="openContent(event, 'Starting')">Getting Started</button></li>
 							<li><button class="tablinks" onclick="openContent(event, 'Bugs')">Fixing Bugs</button></li>
 							<li><button class="tablinks" onclick="openContent(event, 'Testing')">Adding Tests</button></li>
-							<li><button class="tablinks" onclick="openContent(event, 'Auditing')">Analysing Our App Performance</button></li>
-							<li><button class="tablinks" onclick="openContent(event, 'Auditing-competitor')">Analysing Competitor's Performance</button></li>
+							<li><button class="tablinks" onclick="openContent(event, 'Auditing')">Analysing Site Performance</button></li>
+							<li><button class="tablinks" onclick="openContent(event, 'Auditing-competitor')">Analysing Competitor's Site Performance</button></li>
 						</ul>
 					</div>
 					<!-- content -->
@@ -209,11 +209,17 @@
 										alt='accessibility audit fixed element' /></div>
 								<b><em>Best Practices</em></b> - Shows what the app is doing well (<em>Passed audits</em>).
 							</p>
-							<h4>Competitor's todo app</h4><br />
-							<h5>Startup Time</h5>
-							<p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-							<h5>Runtime Performance</h5>
-							<p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+							<h5>Performance Improvement</h5>
+							<p>We made some changes and ran a new audit. Below, we see the results.</p>
+							<div class="img-box col-xs-12 col-md-12">
+								<img class="scaleImg" src="img/audit-our-todo-final.png" title="Final audit" alt="Our todo app final site audit" />
+								<div id="myModal" class="modal">
+									<span class="close"
+										onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+									<img class="modal-content" id="img01">
+									<div id="caption"></div>
+								</div>
+							</div><br/><br/>
 						</div> 	<!-- Auditing Our Todo app -->
 					
 						<div id="Auditing-competitor" class="tab-content">
@@ -227,8 +233,8 @@
 									(to avoid noise) of the Google Chrome v.79 (chrome://version/) browser.</small></p>
 							<h4>Our todo app</h4>
 							<div class="todo-image-wrapper"><a target="_blank"
-									href="https://alexandreformoso.github.io/OC-Project8-todo-list-app/"><img src="../img/to-do-img.png"
-										title="todo list application" alt="access todo list application" /></a></div><br />
+								href="http://todolistme.net/"><img src="../img/competitor-to-do-img.png"
+										title="competitor todo list application" alt="access competitor todo list application" /></a></div><br />
 							<h5>Startup Time</h5>
 							<p>The Network panel shows when resources loaded in, in which order they loaded, and how long they took to
 								load.
@@ -339,11 +345,17 @@
 										alt='accessibility audit fixed element' /></div>
 								<b><em>Best Practices</em></b> - Shows what the app is doing well (<em>Passed audits</em>).
 							</p>
-							<h4>Competitor's todo app</h4><br />
-							<h5>Startup Time</h5>
-							<p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-							<h5>Runtime Performance</h5>
-							<p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+							<h5>Performance Improvement</h5>
+							<p>We made some changes and ran a new audit. Below, we see the results.</p>
+							<div class="img-box col-xs-12 col-md-12">
+								<img class="scaleImg" src="img/audit-our-todo-final.png" title="Final audit" alt="Competitor final site audit" />
+								<div id="myModal" class="modal">
+									<span class="close"
+										onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+									<img class="modal-content" id="img01">
+									<div id="caption"></div>
+								</div>
+							</div><br/><br/>
 						</div> <!-- end of competitor's todo app audit section -->
 					</div>
 				</div>
