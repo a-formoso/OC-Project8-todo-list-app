@@ -1,126 +1,360 @@
 <!doctype html>
 <html lang="en">
-	<head>
-	
-		<meta charset="utf-8"> 
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	<meta name="viewport" content="width=device-width, initial-scale=1  shrink-to-fit=no">
-		<title>To-do App Documentation</title>
-		<!-- Bootstrap CDN -->
-    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-    		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/styles.css">
-		<!-- Font Awesome icons -->
-    	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-    	<!-- Google Fonts -->
-    	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 
-    	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	    <!--[if lt IE 9]>
-	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	    <![endif]-->
-	</head>
-	<body>
-		<section class="outer-container">
-			<section class="inner-container">
-				<header id="header" class=" container">
-					<h1>Technical Documentation</h1>
-					<p><a href="https://aformoso.dev">Alexandre Formoso</a> | January 2020</p>
-				</header>
-				<section id="main" class="container">
-					<div class="row">
-						<div class="navigation-column col-xs-12 col-md-4">
-							<ul class="navigation-menu">
-								<li><button id="openByDefault" class="tablinks" onclick="openContent(event, 'Intro')">Introduction</button></li>
-								<li><button class="tablinks" onclick="openContent(event, 'Starting')">Getting Started</button></li>
-								<li><button class="tablinks" onclick="openContent(event, 'Bugs')">Fixing bugs</button></li>
-								<li><button class="tablinks" onclick="openContent(event, 'Testing')">Adding Tests</button></li>
-								<li><button class="tablinks" onclick="openContent(event, 'Auditing')">Analysing Performance</button></li>
-							</ul>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1  shrink-to-fit=no">
+	<title>To-do App Documentation</title>
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- Font Awesome icons -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+				<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+				<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+			<![endif]-->
+</head>
+
+<body>
+	<section class="outer-container">
+		<section class="inner-container">
+			<header id="header" class=" container">
+				<h1>Technical Documentation</h1>
+				<p><a href="https://aformoso.dev">Alexandre Formoso</a> | January 2020</p>
+			</header>
+			<section id="main" class="container">
+				<div class="row">
+					<div class="navigation-column col-xs-12 col-md-4">
+						<ul class="navigation-menu">
+							<li><button id="openByDefault" class="tablinks"
+									onclick="openContent(event, 'Intro')">Introduction</button></li>
+							<li><button class="tablinks" onclick="openContent(event, 'Starting')">Getting Started</button></li>
+							<li><button class="tablinks" onclick="openContent(event, 'Bugs')">Fixing Bugs</button></li>
+							<li><button class="tablinks" onclick="openContent(event, 'Testing')">Adding Tests</button></li>
+							<li><button class="tablinks" onclick="openContent(event, 'Auditing')">Analysing Our App Performance</button></li>
+							<li><button class="tablinks" onclick="openContent(event, 'Auditing-competitor')">Analysing Competitor's Performance</button></li>
+						</ul>
+					</div>
+					<!-- content -->
+					<div class="content-column col-xs-12 col-md-8">
+						<div id="Intro" class="tab-content">
+							<h2 class="content-title">Introduction</h2>
+							<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+								Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+								Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
+								Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
+								undoubtable source.</p>
 						</div>
-						<!-- content -->
-						<div class="content-column col-xs-12 col-md-8">
-							<div id="Intro" class="tab-content">
-							  <h2 class="content-title">Introduction</h2>
-							  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-							</div>
 
-							<div id="Starting" class="tab-content">
-							  <h2 class="content-title">Getting Started</h2>
-							  <p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-							  <h5>App preview</h5>
-							  <ul>
-							  	<li>Instruction 1</li>
-							  	<li>Instruction 2</li>
-							  </ul>
-							  <h5>App features</h5>
-							  <p>This application should allow users to the add, edit, delete todo; mark a todo as completed; toggle all todo's as completed; filter todo's; and clear all completed todo's.</p>
-							</div>
+						<div id="Starting" class="tab-content">
+							<h2 class="content-title">Getting Started</h2>
+							<p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more
+								obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in
+								classical literature, discovered the undoubtable source.</p>
+							<h5>App preview</h5>
+							<ul>
+								<li>Instruction 1</li>
+								<li>Instruction 2</li>
+							</ul>
+							<h5>App features</h5>
+							<p>This application should allow users to the add, edit, delete todo; mark a todo as completed; toggle all
+								todo's as completed; filter todo's; and clear all completed todo's.</p>
+						</div>
 
-							<div id="Bugs" class="tab-content">
-							  <h2 class="content-title">Fixing Bugs</h2>
-							  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-							</div>
+						<div id="Bugs" class="tab-content">
+							<h2 class="content-title">Fixing Bugs</h2>
+							<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+								Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+								Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
+								Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
+								undoubtable source.</p>
+						</div>
 
-							<div id="Testing" class="tab-content">
-							  <h2 class="content-title">Adding Tests</h2>
-							  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-							</div>
+						<div id="Testing" class="tab-content">
+							<h2 class="content-title">Adding Tests</h2>
+							<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+								Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+								Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
+								Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
+								undoubtable source.</p>
+						</div>
 
-							<div id="Auditing" class="tab-content">
-							  <h2 class="content-title">Analysing Performance</h2>
-							  <p>Here, we are going to measure load and performance of <a id="underline1" target="_blank" href="https://alexandreformoso.github.io/OC-Project8-todo-list-app/">our todo app</a> against a <a id="underline2" target="_blank" href="http://todolistme.net/">competitor's</a> using DevTools. We will then see ways in which we can optimise perfomance for end users.</p>
-							  <p style="padding-top: 10px;"><small><b>Please note</b> that gatherings may differ from user to user, depending on one's set up. This audit was run on a 64-bit Windows 10 machine, using the Incognito mode (to avoid noise) of the Google Chrome v.79 (chrome://version/) browser.</small></p>
-							  <h4>Our todo app</h4>
-							  <div class="todo-image-wrapper"><a target="_blank" 
-							  	href="https://alexandreformoso.github.io/OC-Project8-todo-list-app/"><img src="../img/to-do-img.png"/></a></div><br/>
-							  <h5>Startup Time</h5>
-							  <p >Looking at the network log (below), we realise that only 12 requests are made in the 22.0KB of downloaded (or transferred) data, taking only 224ms of load time.<br><br>
-							  	<b><em>Network Trottling: Slow 3G </em></b><br> For mobile device users with slow connectivity, load time simulated shows 4.59s.</p>
-							  <div class="modal-img-wrapper border-radius">
-							  	<div class="img-box col-xs-12 col-md-6">
-							  		<!-- Trigger the Modal -->
-							  		<img class="scaleImg" src="img/load-our-todo.png" title="click to scale" alt="Online"/>
-							  		<!-- The Modal -->
-							  		<div id="myModal" class="modal">
-							  			<!-- The Close Button -->
-							  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-							  			<!-- Modal Content (The Image) -->
-							  			<img class="modal-content border-radius" id="img01"/>
-							  			<!-- Modal Caption (Image Text) -->
-							  			<div id="caption"></div>
-							  		</div>
-							  	</div>
-								<div class="img-box col-xs-12 col-md-6">
-									<img class="scaleImg" src="img/mobileLoad-our-todo.png" title="click to scale" alt="Slow 3G"/>
-							  		<div id="myModal" class="modal">
-							  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-							  			<img class="modal-content" id="img01">
-							  			<div id="caption"></div>
+						<div id="Auditing" class="tab-content">
+							<h2 class="content-title">Analysing Our Site's Performance</h2>
+							<p>Here, we are going to measure load and performance of <a id="underline1" target="_blank"
+									href="https://alexandreformoso.github.io/OC-Project8-todo-list-app/">our todo app</a> against a <a
+									id="underline2" target="_blank" href="http://todolistme.net/">competitor's</a> using DevTools. We will
+								then see ways in which we can optimise perfomance for end users.</p>
+							<p style="padding-top: 10px;"><small><b>Please note</b> that gatherings may differ from user to user,
+									depending on one's set up. This audit was run on a 64-bit Windows 10 machine, using the Incognito mode
+									(to avoid noise) of the Google Chrome v.79 (chrome://version/) browser.</small></p>
+							<h4>Our todo app</h4>
+							<div class="todo-image-wrapper"><a target="_blank"
+									href="https://alexandreformoso.github.io/OC-Project8-todo-list-app/"><img src="../img/to-do-img.png"
+										title="todo list application" alt="access todo list application" /></a></div><br />
+							<h5>Startup Time</h5>
+							<p>The Network panel shows when resources loaded in, in which order they loaded, and how long they took to
+								load.
+								It is a great place to start to see if resources are being downloaded as expected.
+								<br /><br />For out todo app, the Network Log (image on the left below) shows that only 10 requests were
+								made in the 13.6KB of downloaded (or transferred) data, and overall only took 174ms of load time.
+								<br /><b><em>Mobile CUP Simulation (Network: Slow 3G | CPU: 4x slowdown)</em></b><br> For mobile device
+								users with slow connectivity, load time simulated shows 4.53s (right).
+								<div class="modal-img-wrapper border-radius">
+									<div class="img-box col-xs-12 col-md-6">
+										<!-- Trigger the Modal -->
+										<img class="scaleImg" src="img/load-our-todo.png" title="Desktop simulation"
+											alt="Desktop simulation diagram: Online" />
+										<!-- The Modal -->
+										<div id="myModal" class="modal">
+											<!-- The Close Button -->
+											<span class="close"
+												onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+											<!-- Modal Content (The Image) -->
+											<img class="modal-content border-radius" id="img01" />
+											<!-- Modal Caption (Image Text) -->
+											<div id="caption"></div>
+										</div>
+									</div>
+									<div class="img-box col-xs-12 col-md-6">
+										<img class="scaleImg" src="img/load-our-todo-slow3g.png" title="Mobile CUP simulation"
+											alt="Mobile CUP simulation diagram: Slow 3G" />
+										<div id="myModal" class="modal">
+											<span class="close"
+												onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+											<img class="modal-content" id="img01">
+											<div id="caption"></div>
+										</div>
 									</div>
 								</div>
-							  </div><br>
-							  
-							 
-							  
-							  
-							  <h5>Runtime Performance</h5>
-							  <p>The code in our app seems well optimised: not many unecessary DOM repaints, not many HTTP round trips, and no signs of memory leaks either. The app performs well on both desktop and mobile devices.</p>
-							  <h4>Competitor's todo app</h4><br/>
-							  <h5>Startup Time</h5>
-							  <p>The startup time indicates that....</p>
-							  <h5>Runtime Performance</h5>
-							  <p>One possible solution for this could mean finding code alternatives for performance enhancement. E.g.: Using a more efficient Loop methods.</p>
-							</div>
-						</div>
+							</p>
+
+							<h5>Runtime Performance</h5>
+							<p><em>Runtime performance is how your page performs when it is running, as opposed to loading.</em><br />
+								Here, we are going to see how our todo app performs, and how we can improve potential issues.
+								<br /><br />
+								<b><em>Site Audit</em></b><br />
+								Results indicate that our todo app performs well on Deskotop devices.
+								<div class="modal-img-wrapper border-radius">
+									<div class="img-box col-xs-12 col-md-6">
+										<img class="scaleImg" src="img/audit-our-todo.png" title="Site Audit"
+											alt="Our todo app site audit" />
+										<div id="myModal" class="modal">
+											<span class="close"
+												onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+											<img class="modal-content border-radius" id="img01" />
+											<div id="caption"></div>
+										</div>
+									</div>
+									<div class="img-box col-xs-12 col-md-6">
+										<img class="scaleImg" src="img/audit-our-todo-performance.png" title="Performance Audit"
+											alt="Our todo app site performance audit" />
+										<div id="myModal" class="modal">
+											<span class="close"
+												onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+											<img class="modal-content" id="img01">
+											<div id="caption"></div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-img-wrapper border-radius">
+									<div class="img-box col-xs-12 col-md-6">
+										<img class="scaleImg" src="img/audit-our-todo-accessibility.png" title="Accessibility Audit"
+											alt="Our todo app site accessibility audit" />
+										<div id="myModal" class="modal">
+											<span class="close"
+												onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+											<img class="modal-content border-radius" id="img01" />
+											<div id="caption"></div>
+										</div>
+									</div>
+									<div class="img-box col-xs-12 col-md-6">
+										<img class="scaleImg" src="img/audit-our-todo-bestPractices.png" title="Best Practices Audit"
+											alt="Our todo app site best practices audit" />
+										<div id="myModal" class="modal">
+											<span class="close"
+												onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+											<img class="modal-content" id="img01">
+											<div id="caption"></div>
+										</div>
+									</div>
+								</div>
+								<br /><b><em>Performance</em></b>. In the Metrics section we can see our todo app's performance. <em>First
+									Contentful Paint</em> tells us that content was first painted to the screen at 1.0s,
+								which is a good milestone in the user's perception of the page load; <em>Time To Interactive</em>, on
+								the other hand, marks the point at which the page appeared ready enough to handle user interactions.
+								Overall, the app avarages 1.0s to populate contents on the page (<em>Speed Index</em>) and we learn that
+								the longest a user could potentially wait until the app is ready to take input (from First Content
+								Paint) is 30ms, which is great.
+								<br /><b><em>Accessibility</em></b> involves understanding how people with disability access and interact with
+								the web pages we build. As a Web Developer, following the W3C standards on Accessibility (WCAG) and
+								improving the semantics of our HTML will enhance the experience for users of <a
+									href='https://www.google.com/search?q=assistive+technology&source=lmns&bih=625&biw=1366&rlz=1C1CHBD_en-GBGB755GB755&hl=en&ved=2ahUKEwjOstyP1sLnAhUTgHMKHVzKAJUQ_AUoAHoECAEQAA'
+									target='_blank'><em>assistive technology</em></a>.
+								Our Accessibility audit shows the following opportunity in our todo app:
+								<div style='height: 100px; padding: 5px 0;' class='todo-image-wrapper'><img
+										src='img/opportunitie-accessibility-failingElement.png' alt='accessibility audit failing element' />
+								</div>
+								To solution this problem we can simply wrap a <i>label</i> tag around the <i>h1</i> element and give it
+								a <i>for</i> property which matches that of form (input tag) element, like so:
+								<div style='height: 100px; padding: 5px 0;' class='todo-image-wrapper'><img
+										src='img/opportunitie-accessibility-failingElement-solution.png'
+										alt='accessibility audit fixed element' /></div>
+								<b><em>Best Practices</em></b> - Shows what the app is doing well (<em>Passed audits</em>).
+							</p>
+							<h4>Competitor's todo app</h4><br />
+							<h5>Startup Time</h5>
+							<p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+							<h5>Runtime Performance</h5>
+							<p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+						</div> 	<!-- Auditing Our Todo app -->
+					
+						<div id="Auditing-competitor" class="tab-content">
+							<h2 class="content-title">Analysing Competitor's Site Performance</h2>
+							<p>Here, we are going to measure load and performance of <a id="underline1" target="_blank"
+									href="https://alexandreformoso.github.io/OC-Project8-todo-list-app/">our todo app</a> against a <a
+									id="underline2" target="_blank" href="http://todolistme.net/">competitor's</a> using DevTools. We will
+								then see ways in which we can optimise perfomance for end users.</p>
+							<p style="padding-top: 10px;"><small><b>Please note</b> that gatherings may differ from user to user,
+									depending on one's set up. This audit was run on a 64-bit Windows 10 machine, using the Incognito mode
+									(to avoid noise) of the Google Chrome v.79 (chrome://version/) browser.</small></p>
+							<h4>Our todo app</h4>
+							<div class="todo-image-wrapper"><a target="_blank"
+									href="https://alexandreformoso.github.io/OC-Project8-todo-list-app/"><img src="../img/to-do-img.png"
+										title="todo list application" alt="access todo list application" /></a></div><br />
+							<h5>Startup Time</h5>
+							<p>The Network panel shows when resources loaded in, in which order they loaded, and how long they took to
+								load.
+								It is a great place to start to see if resources are being downloaded as expected.
+								<br /><br />For out todo app, the Network Log (image on the left below) shows that only 10 requests were
+								made in the 13.6KB of downloaded (or transferred) data, and overall only took 174ms of load time.
+								<br /><b><em>Mobile CUP Simulation (Network: Slow 3G | CPU: 4x slowdown)</em></b><br> For mobile device
+								users with slow connectivity, load time simulated shows 4.53s (right).
+								<div class="modal-img-wrapper border-radius">
+									<div class="img-box col-xs-12 col-md-6">
+										<!-- Trigger the Modal -->
+										<img class="scaleImg" src="img/load-our-todo.png" title="Desktop simulation"
+											alt="Desktop simulation diagram: Online" />
+										<!-- The Modal -->
+										<div id="myModal" class="modal">
+											<!-- The Close Button -->
+											<span class="close"
+												onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+											<!-- Modal Content (The Image) -->
+											<img class="modal-content border-radius" id="img01" />
+											<!-- Modal Caption (Image Text) -->
+											<div id="caption"></div>
+										</div>
+									</div>
+									<div class="img-box col-xs-12 col-md-6">
+										<img class="scaleImg" src="img/load-our-todo-slow3g.png" title="Mobile CUP simulation"
+											alt="Mobile CUP simulation diagram: Slow 3G" />
+										<div id="myModal" class="modal">
+											<span class="close"
+												onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+											<img class="modal-content" id="img01">
+											<div id="caption"></div>
+										</div>
+									</div>
+								</div>
+							</p>
+
+							<h5>Runtime Performance</h5>
+							<p><em>Runtime performance is how your page performs when it is running, as opposed to loading.</em><br />
+								Here, we are going to see how our todo app performs, and how we can improve potential issues.
+								<br /><br />
+								<b><em>Site Audit</em></b><br />
+								Results indicate that our todo app performs well on Deskotop devices.
+								<div class="modal-img-wrapper border-radius">
+									<div class="img-box col-xs-12 col-md-6">
+										<img class="scaleImg" src="img/audit-our-todo.png" title="Site Audit"
+											alt="Our todo app site audit" />
+										<div id="myModal" class="modal">
+											<span class="close"
+												onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+											<img class="modal-content border-radius" id="img01" />
+											<div id="caption"></div>
+										</div>
+									</div>
+									<div class="img-box col-xs-12 col-md-6">
+										<img class="scaleImg" src="img/audit-our-todo-performance.png" title="Performance Audit"
+											alt="Our todo app site performance audit" />
+										<div id="myModal" class="modal">
+											<span class="close"
+												onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+											<img class="modal-content" id="img01">
+											<div id="caption"></div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-img-wrapper border-radius">
+									<div class="img-box col-xs-12 col-md-6">
+										<img class="scaleImg" src="img/audit-our-todo-accessibility.png" title="Accessibility Audit"
+											alt="Our todo app site accessibility audit" />
+										<div id="myModal" class="modal">
+											<span class="close"
+												onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+											<img class="modal-content border-radius" id="img01" />
+											<div id="caption"></div>
+										</div>
+									</div>
+									<div class="img-box col-xs-12 col-md-6">
+										<img class="scaleImg" src="img/audit-our-todo-bestPractices.png" title="Best Practices Audit"
+											alt="Our todo app site best practices audit" />
+										<div id="myModal" class="modal">
+											<span class="close"
+												onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+											<img class="modal-content" id="img01">
+											<div id="caption"></div>
+										</div>
+									</div>
+								</div>
+								<br /><b><em>Performance</em></b>. In the Metrics section we can see our todo app's performance. <em>First
+									Contentful Paint</em> tells us that content was first painted to the screen at 1.0s,
+								which is a good milestone in the user's perception of the page load; <em>Time To Interactive</em>, on
+								the other hand, marks the point at which the page appeared ready enough to handle user interactions.
+								Overall, the app avarages 1.0s to populate contents on the page (<em>Speed Index</em>) and we learn that
+								the longest a user could potentially wait until the app is ready to take input (from First Content
+								Paint) is 30ms, which is great.
+								<br /><b><em>Accessibility</em></b> involves understanding how people with disability access and interact with
+								the web pages we build. As a Web Developer, following the W3C standards on Accessibility (WCAG) and
+								improving the semantics of our HTML will enhance the experience for users of <a
+									href='https://www.google.com/search?q=assistive+technology&source=lmns&bih=625&biw=1366&rlz=1C1CHBD_en-GBGB755GB755&hl=en&ved=2ahUKEwjOstyP1sLnAhUTgHMKHVzKAJUQ_AUoAHoECAEQAA'
+									target='_blank'><em>assistive technology</em></a>.
+								Our Accessibility audit shows the following opportunity in our todo app:
+								<div style='height: 100px; padding: 5px 0;' class='todo-image-wrapper'><img
+										src='img/opportunitie-accessibility-failingElement.png' alt='accessibility audit failing element' />
+								</div>
+								To solution this problem we can simply wrap a <i>label</i> tag around the <i>h1</i> element and give it
+								a <i>for</i> property which matches that of form (input tag) element, like so:
+								<div style='height: 100px; padding: 5px 0;' class='todo-image-wrapper'><img
+										src='img/opportunitie-accessibility-failingElement-solution.png'
+										alt='accessibility audit fixed element' /></div>
+								<b><em>Best Practices</em></b> - Shows what the app is doing well (<em>Passed audits</em>).
+							</p>
+							<h4>Competitor's todo app</h4><br />
+							<h5>Startup Time</h5>
+							<p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+							<h5>Runtime Performance</h5>
+							<p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+						</div> <!-- end of competitor's todo app audit section -->
 					</div>
-				</section>
+				</div>
 			</section>
 		</section>
+	</section>
 
-		<!-- JavaScript, jQuery CDN-->
-    	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    	<script src="js/doc.js"></script>
-	</body>
+	<!-- JavaScript, jQuery CDN-->
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script src="js/doc.js"></script>
+</body>
+
 </html>
