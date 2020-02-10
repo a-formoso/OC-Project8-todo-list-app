@@ -38,8 +38,10 @@
 							<li><button class="tablinks" onclick="openContent(event, 'Starting')">Getting Started</button></li>
 							<li><button class="tablinks" onclick="openContent(event, 'Bugs')">Fixing Bugs</button></li>
 							<li><button class="tablinks" onclick="openContent(event, 'Testing')">Adding Tests</button></li>
-							<li><button class="tablinks" onclick="openContent(event, 'Auditing')">Analysing Site Performance</button></li>
-							<li><button class="tablinks" onclick="openContent(event, 'Auditing-competitor')">Analysing Competitor's Site Performance</button></li>
+							<li><button class="tablinks" onclick="openContent(event, 'Auditing')">Analysing Site Performance</button>
+							</li>
+							<li><button class="tablinks" onclick="openContent(event, 'Auditing-competitor')">Analysing Competitor's
+									Site Performance</button></li>
 						</ul>
 					</div>
 					<!-- content -->
@@ -186,14 +188,16 @@
 										</div>
 									</div>
 								</div>
-								<br /><b><em>Performance</em></b>. In the Metrics section we can see our todo app's performance. <em>First
+								<br /><b><em>Performance</em></b>. In the Metrics section we can see our todo app's performance.
+								<em>First
 									Contentful Paint</em> tells us that content was first painted to the screen at 1.0s,
 								which is a good milestone in the user's perception of the page load; <em>Time To Interactive</em>, on
 								the other hand, marks the point at which the page appeared ready enough to handle user interactions.
 								Overall, the app avarages 1.0s to populate contents on the page (<em>Speed Index</em>) and we learn that
 								the longest a user could potentially wait until the app is ready to take input (from First Content
 								Paint) is 30ms, which is great.
-								<br /><b><em>Accessibility</em></b> involves understanding how people with disability access and interact with
+								<br /><b><em>Accessibility</em></b> involves understanding how people with disability access and
+								interact with
 								the web pages we build. As a Web Developer, following the W3C standards on Accessibility (WCAG) and
 								improving the semantics of our HTML will enhance the experience for users of <a
 									href='https://www.google.com/search?q=assistive+technology&source=lmns&bih=625&biw=1366&rlz=1C1CHBD_en-GBGB755GB755&hl=en&ved=2ahUKEwjOstyP1sLnAhUTgHMKHVzKAJUQ_AUoAHoECAEQAA'
@@ -212,41 +216,41 @@
 							<h5>Performance Improvement</h5>
 							<p>We made some changes and ran a new audit. Below, we see the results.</p>
 							<div class="img-box col-xs-12 col-md-12">
-								<img class="scaleImg" src="img/audit-our-todo-final.png" title="Final audit" alt="Our todo app final site audit" />
+								<img class="scaleImg" src="img/audit-our-todo-final.png" title="Final audit"
+									alt="Our todo app final site audit" />
 								<div id="myModal" class="modal">
-									<span class="close"
-										onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+									<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
 									<img class="modal-content" id="img01">
 									<div id="caption"></div>
 								</div>
-							</div><br/><br/>
-						</div> 	<!-- Auditing Our Todo app -->
-					
+							</div><br /><br />
+						</div> <!-- Auditing Our Todo app -->
+
 						<div id="Auditing-competitor" class="tab-content">
 							<h2 class="content-title">Analysing Competitor's Site Performance</h2>
-							<p>Here, we are going to measure load and performance of <a id="underline1" target="_blank"
+							<p>Here, we are going to measure load time of <a id="underline1" target="_blank"
 									href="https://alexandreformoso.github.io/OC-Project8-todo-list-app/">our todo app</a> against a <a
 									id="underline2" target="_blank" href="http://todolistme.net/">competitor's</a> using DevTools. We will
 								then see ways in which we can optimise perfomance for end users.</p>
 							<p style="padding-top: 10px;"><small><b>Please note</b> that gatherings may differ from user to user,
 									depending on one's set up. This audit was run on a 64-bit Windows 10 machine, using the Incognito mode
 									(to avoid noise) of the Google Chrome v.79 (chrome://version/) browser.</small></p>
-							<h4>Our todo app</h4>
-							<div class="todo-image-wrapper"><a target="_blank"
-								href="http://todolistme.net/"><img src="../img/competitor-to-do-img.png"
-										title="competitor todo list application" alt="access competitor todo list application" /></a></div><br />
+							<h4>Competitor's todo app</h4>
+							<div class="todo-image-wrapper"><a target="_blank" href="http://todolistme.net/"><img
+										src="../img/competitor-to-do-img.png" title="competitor todo list application"
+										alt="access competitor todo list application" /></a></div><br />
 							<h5>Startup Time</h5>
-							<p>The Network panel shows when resources loaded in, in which order they loaded, and how long they took to
-								load.
-								It is a great place to start to see if resources are being downloaded as expected.
-								<br /><br />For out todo app, the Network Log (image on the left below) shows that only 10 requests were
-								made in the 13.6KB of downloaded (or transferred) data, and overall only took 174ms of load time.
-								<br /><b><em>Mobile CUP Simulation (Network: Slow 3G | CPU: 4x slowdown)</em></b><br> For mobile device
-								users with slow connectivity, load time simulated shows 4.53s (right).
+							<p>Looking at the Network Log, we are able to see that our competiror's website required 66 network
+								requests, had 893KB in transferred data,
+								and spent over 2 seconds on load time, a double in figures when compared to our todo application.
+								<br /><br />Too many round trips can have an impact on loading, which subsequently affect the user
+								experience
+								- evident of this is when we simulate slow mobile CPU, notice how some of the resources take over 12
+								seconds to be dowloaded (see images below).
 								<div class="modal-img-wrapper border-radius">
 									<div class="img-box col-xs-12 col-md-6">
 										<!-- Trigger the Modal -->
-										<img class="scaleImg" src="img/load-our-todo.png" title="Desktop simulation"
+										<img class="scaleImg" src="img/load-competitor-todo.png" title="Desktop simulation"
 											alt="Desktop simulation diagram: Online" />
 										<!-- The Modal -->
 										<div id="myModal" class="modal">
@@ -260,7 +264,7 @@
 										</div>
 									</div>
 									<div class="img-box col-xs-12 col-md-6">
-										<img class="scaleImg" src="img/load-our-todo-slow3g.png" title="Mobile CUP simulation"
+										<img class="scaleImg" src="img/load-competitor-todo-slow3g.png" title="Mobile CUP simulation"
 											alt="Mobile CUP simulation diagram: Slow 3G" />
 										<div id="myModal" class="modal">
 											<span class="close"
@@ -273,15 +277,14 @@
 							</p>
 
 							<h5>Runtime Performance</h5>
-							<p><em>Runtime performance is how your page performs when it is running, as opposed to loading.</em><br />
-								Here, we are going to see how our todo app performs, and how we can improve potential issues.
+							<p>To measure and optimise website performance we start with an audit.
 								<br /><br />
 								<b><em>Site Audit</em></b><br />
 								Results indicate that our todo app performs well on Deskotop devices.
 								<div class="modal-img-wrapper border-radius">
 									<div class="img-box col-xs-12 col-md-6">
-										<img class="scaleImg" src="img/audit-our-todo.png" title="Site Audit"
-											alt="Our todo app site audit" />
+										<img class="scaleImg" src="img/audit-competitor-todo.png" title="Competitor's site audit"
+											alt="Competitor's todo app site audit" />
 										<div id="myModal" class="modal">
 											<span class="close"
 												onclick="document.getElementById('myModal').style.display='none'">&times;</span>
@@ -290,20 +293,48 @@
 										</div>
 									</div>
 									<div class="img-box col-xs-12 col-md-6">
-										<img class="scaleImg" src="img/audit-our-todo-performance.png" title="Performance Audit"
-											alt="Our todo app site performance audit" />
+										<img class="scaleImg" src="img/audit-competitor-todo-performance.png"
+											title="Competitor's performance audit" alt="Our todo app site audit" />
 										<div id="myModal" class="modal">
 											<span class="close"
 												onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-											<img class="modal-content" id="img01">
+											<img class="modal-content border-radius" id="img01" />
 											<div id="caption"></div>
 										</div>
 									</div>
 								</div>
+								<br /><b>Performance</b>.
+								In the Metrics section (above) we're able to see that the first painted content takes 1.6s to appear on
+								the screen (<em>First
+									Contentful Paint</em>). However, as we are dealing with many HTTP requests, the site avarages 3.1s to
+								populate the contents of the page
+								(<em>Speed Index</em>). Consequently, this leads to 8.5s mark in the time a user has to wait until the
+								page becomes interactive or ready to take
+								user input (<em>Time To Interactive</em>) - this is considerably slow compared to our todo app's 1.1s of
+								<em>TTI</em>.
+								<br /><br />Below, are the opportunities highlighted to optimise performance.
+								<div style='width: 460px; height: auto; padding: 5px 0;' class='todo-image-wrapper'><img
+										src='img/audit-competitor-todo-performance-opportunity.png'
+										alt='performance audit - opportunities' />
+								</div>
+								<b>> <i>Eliminate render-blocking resources</i></b> refers to all URLs (particularly fonts, CSS and
+								jQuery) blocking the first paint of our page.
+								To fix this issue we start by making sure that script elements are placed at the bottom of the page
+								instead; then we should go ahed and identify what's
+								critical and non-critical CSS and JS. In other words, we can go: Audit > (open bottom tab menu) More
+								Options > <b><i><a href="https://developers.google.com/web/tools/chrome-devtools/coverage"
+											target="_blank">Coverage</a></i></b>. Under Coverage, click the reload icon on the tab submenu to
+								reload and start capturing coverage. This should present a list of URLs with red and blue/green
+								highlights on the right.
+								By opening each URL we can see how much code was used versus how much was loaded.
+								We can reduce the size of our pages by removing the extra code and only shipping the code that we need.
+								Alternatively, we can go on the <b>Network tab</b> and, right-click on a specific resource, and select
+								<b>Block Request URL</b>. This gives us an indication of how a page works without that particular
+								resource.
 								<div class="modal-img-wrapper border-radius">
 									<div class="img-box col-xs-12 col-md-6">
-										<img class="scaleImg" src="img/audit-our-todo-accessibility.png" title="Accessibility Audit"
-											alt="Our todo app site accessibility audit" />
+										<img class="scaleImg" src="img/audit-competitor-todo-performance-opportunity-solution1.png"
+											title="Competitor's performance audit" alt="Competitor performance audit - solution" />
 										<div id="myModal" class="modal">
 											<span class="close"
 												onclick="document.getElementById('myModal').style.display='none'">&times;</span>
@@ -312,50 +343,45 @@
 										</div>
 									</div>
 									<div class="img-box col-xs-12 col-md-6">
-										<img class="scaleImg" src="img/audit-our-todo-bestPractices.png" title="Best Practices Audit"
-											alt="Our todo app site best practices audit" />
+										<img class="scaleImg" src="img/audit-competitor-todo-performance-opportunity-solution2.png"
+											title="Competitor's performance audit" alt="Competitor performance audit - solution" />
 										<div id="myModal" class="modal">
 											<span class="close"
 												onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-											<img class="modal-content" id="img01">
+											<img class="modal-content border-radius" id="img01" />
 											<div id="caption"></div>
 										</div>
 									</div>
 								</div>
-								<br /><b><em>Performance</em></b>. In the Metrics section we can see our todo app's performance. <em>First
-									Contentful Paint</em> tells us that content was first painted to the screen at 1.0s,
-								which is a good milestone in the user's perception of the page load; <em>Time To Interactive</em>, on
-								the other hand, marks the point at which the page appeared ready enough to handle user interactions.
-								Overall, the app avarages 1.0s to populate contents on the page (<em>Speed Index</em>) and we learn that
-								the longest a user could potentially wait until the app is ready to take input (from First Content
-								Paint) is 30ms, which is great.
-								<br /><b><em>Accessibility</em></b> involves understanding how people with disability access and interact with
-								the web pages we build. As a Web Developer, following the W3C standards on Accessibility (WCAG) and
-								improving the semantics of our HTML will enhance the experience for users of <a
-									href='https://www.google.com/search?q=assistive+technology&source=lmns&bih=625&biw=1366&rlz=1C1CHBD_en-GBGB755GB755&hl=en&ved=2ahUKEwjOstyP1sLnAhUTgHMKHVzKAJUQ_AUoAHoECAEQAA'
-									target='_blank'><em>assistive technology</em></a>.
-								Our Accessibility audit shows the following opportunity in our todo app:
-								<div style='height: 100px; padding: 5px 0;' class='todo-image-wrapper'><img
-										src='img/opportunitie-accessibility-failingElement.png' alt='accessibility audit failing element' />
+								<br /><b>Accessibility</b>
+								<div style='width: 460px; height: auto; padding: 5px 0;' class='todo-image-wrapper'><img
+										src='img/audit-competitor-todo-accessibilities-opportunity.png'
+										alt='performance audit - opportunities' />
 								</div>
-								To solution this problem we can simply wrap a <i>label</i> tag around the <i>h1</i> element and give it
-								a <i>for</i> property which matches that of form (input tag) element, like so:
-								<div style='height: 100px; padding: 5px 0;' class='todo-image-wrapper'><img
-										src='img/opportunitie-accessibility-failingElement-solution.png'
-										alt='accessibility audit fixed element' /></div>
-								<b><em>Best Practices</em></b> - Shows what the app is doing well (<em>Passed audits</em>).
+								<b>> <i>Background</i></b>. Here, we want a better constrast ratio between background and foreground
+								colours.<br />
+								<b>> <i>Id Atributes</i></b>. For best accessibility practices values of ID attributes should be
+								unique.<br />
+								<br /><b>Best Practices</b>
+								<div style='width: 460px; height: auto; padding: 5px 0;' class='todo-image-wrapper'><img
+										src='img/audit-competitor-todo-bestPractices.png'
+										alt='Competitors best practices audit - opportunities' alt='Best practices audit - opportunities' />
+								</div>
+								<b>> <i>HTTPS</i></b> - The site should use HTTPS for secure connection between the site and its
+								users.<br /><br />
+								<b>SEO</b>
+								<div style='width: 460px; height: auto; padding: 5px 0;' class='todo-image-wrapper'><img
+										src='img/audit-competitor-todo-seo-opportunity.png' alt='seo audit - opportunities' />
+								</div>
+								<b>> <i>Mobile friendlyness</i></b>. A meta tag with name attribute and value of "viewport" should have
+								been included in the document's head.<br />
+								<b>> <i>Accessibility compliance</i></b>. Images should include alternative text to ensure users with
+								assistive technology have a better browsering experience.<br />
 							</p>
-							<h5>Performance Improvement</h5>
-							<p>We made some changes and ran a new audit. Below, we see the results.</p>
-							<div class="img-box col-xs-12 col-md-12">
-								<img class="scaleImg" src="img/audit-our-todo-final.png" title="Final audit" alt="Competitor final site audit" />
-								<div id="myModal" class="modal">
-									<span class="close"
-										onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-									<img class="modal-content" id="img01">
-									<div id="caption"></div>
-								</div>
-							</div><br/><br/>
+							<h5>Conclusion</h5>
+							<p>Overall, the tests indicate that our todo application appears to be more performance optimised than our
+								competitors'. Suggestions for cleaner, better performaning code should be looked into. 
+							</p>
 						</div> <!-- end of competitor's todo app audit section -->
 					</div>
 				</div>
