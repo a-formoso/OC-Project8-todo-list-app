@@ -27,7 +27,7 @@
 		<section class="inner-container">
 			<header id="header" class=" container">
 				<h1>Technical Documentation</h1>
-				<p><a href="https://aformoso.dev">Alexandre Formoso</a> | January 2020</p>
+				<p><a href="https://aformoso.dev">Alexandre Formoso</a> | February 2020</p>
 			</header>
 			<section id="main" class="container">
 				<div class="row">
@@ -48,44 +48,86 @@
 					<div class="content-column col-xs-12 col-md-8">
 						<div id="Intro" class="tab-content">
 							<h2 class="content-title">Introduction</h2>
-							<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-								Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-								Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
-								Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
-								undoubtable source.</p>
+							<p>The purpose of this documentation is to provide information on an enhanced <b><em>to-do app</em></b>.<br/><br/>  
+								For lack of a better name, the <em>to-do app</em> in question is simply a task management application built in JavaScript. 
+								It allows users to add, edit, delete, or mark tasks as complete. With the filter mechanism, users are also able to see 
+								active and completed tasks in a simple and organised way. <br/><br/>Access full application and code (GitHub) repository using the links below: <br/>
+								<ul>
+									<li style="list-style-type: square;">The to-do app: <b><a target="_blank" href="https://alexandreformoso.github.io/OC-Project8-todo-list-app/">To-do</a></b><br/></li>
+									<li style="list-style-type: square;">GitHub repo: <b><a target="_blank" href="https://github.com/alexandreformoso/OC-Project8-todo-list-app/">OC-Project8-todo-list-app</a></b></li>
+								</ul>
+				        In a small scale, the to-do app implements a JavaScript interpretation of the MVC (Model-View-Controller) architecture. 
+								In other words, the app exercises of improved application organisation through a separation of concerns: 
+								the isolation of application data (Model) from the visual representation of the model (View), with a third 
+								component (Controller) being used to link the other components and manage the logic and user input.
+							</p>
 						</div>
 
 						<div id="Starting" class="tab-content">
 							<h2 class="content-title">Getting Started</h2>
-							<p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more
-								obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in
-								classical literature, discovered the undoubtable source.</p>
-							<h5>App preview</h5>
-							<ul>
-								<li>Instruction 1</li>
-								<li>Instruction 2</li>
-							</ul>
-							<h5>App features</h5>
-							<p>This application should allow users to the add, edit, delete todo; mark a todo as completed; toggle all
-								todo's as completed; filter todo's; and clear all completed todo's.</p>
+							<p>Project files are available for download on GitHub.</p>
+              <h5>Downloading the files</h5>
+							  <p>To download files, use the following GitHub link:</p>
+									<ul>
+										<li style="list-style-type: decimal;"><b><a target="_blank" href="https://github.com/alexandreformoso/OC-Project8-todo-list-app">https://github.com/alexandreformoso/OC-Project8-todo-list-app</a></b></li>
+										<li style="list-style-type: decimal;">At the top (right corner) of the page, find and click the <b>Clone or download</b> button</li>
+										<li style="list-style-type: decimal;">Select your preferred way to download</li>
+									</ul>
+									Alternatively, clone project files directly from your command line application: <br/><br/>
+									<ul>
+										<li style="list-style-type: decimal;">Follow steps 1 & 2 above</li>
+										<li style="list-style-type: decimal;">Copy the URL provided (blue highlight - image below)<br/><br/>
+										  <img style="width: 400px; height: 200px;" src="img/clonePath.png"/></li><br/>
+										<li style="list-style-type: decimal;">In your command line, root to your preferred location in the file system</li>
+										<li style="list-style-type: decimal;">In your command line, run <b><em>git clone [URL]</em></b></li><br/>
+                    <li>
+											<small>
+                        Please note that you before making any changes to the project (eg.: Git commits), make sure you initialise the folder as your local repository. 
+									      To accomplish this simply run <b><em>git init</em></b> within your project folder, and then run <b><em>ls -la</em></b> to see the hidden <b><em></em>.git</b> folder listed for confirmation.
+											</small>
+										</li>
+									</ul><br/>
+								<h5>Previewing the app</h5>
+								<p>Once you have downloaded the project files, follow these last steps to preview the app:</p>
+								<ul>
+									<li style="list-style-type: square;">Download and install <b><a href="https://nodejs.org/en/download/">Node.js</a></b> in your machine</li>
+									<li style="list-style-type: square;">In your command line, run <b><em>npm install</em></b> to install project dependencies</li>
+									<li style="list-style-type: square;">Open the <b><em>index.html</em></b> file from your <b>todo-list-app</b> folder</li>
+								</ul><br/>
+								<h5>A little more about the to-do app</h5>
+								<p>A fun fact about this to-do app is that it uses (browser) local storage, which means user data is persisted even after the 
+									browser is closed/refreshed. Data stored in local storage does not expiry.</p>
+						    </p>
 						</div>
 
 						<div id="Bugs" class="tab-content">
 							<h2 class="content-title">Fixing Bugs</h2>
-							<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-								Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-								Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
-								Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
-								undoubtable source.</p>
+							<p>A couple of bugs were found and fixed from the following files:</p>
+							<ul>
+								<li style="list-style-type: square;">todo-list-app/js/<b>controller.js</b></li>
+								<li style="list-style-type: square;">todo-list-app/js/<b>store.js</b></li>
+							</ul>
+							<h5>controller.js</h5>
+							<p>[ Line 95 ] <br/>
+							A typo, <code><em>adddItem</em></code>, found and corrected with <code><em>addItem</em></code> (Controller.prototype.addItem)</p>
+							<h5>store.js</h5>
+							<p>[ Lines 83-89 ]<br/>
+							A duplicated ID created by the following code:
+							<img src="img/duplicated-ID.png"/><br/>
+							[ Lines 91-105 ]<br/>
+							... replaced and fixed by the following code:<br/>
+							<img src="img/duplicated-ID-bugFix.png"/><br/>
+							</p>
 						</div>
 
 						<div id="Testing" class="tab-content">
 							<h2 class="content-title">Adding Tests</h2>
-							<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-								Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-								Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
-								Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
-								undoubtable source.</p>
+							<p>JavaScript unit tests were added using the <a href="https://jasmine.github.io/" target="_blank">Jasmine</a> testing framework.<br/><br/>
+							The file containing the tests, <b><em>ControllerSpec.js</em></b>, can be found in <b>todo-list-app > test</b> folder.
+							<br/><br/>To preview the tests in the browser, make sure to install project dependencies first and then open the 
+							<b><em>SpecRunner.html</em></b> file encountered in the <b>test</b> folder.<br/><br/>
+							<img src="img/jasmine-unit-tests.png"/>
+						  </p>
 						</div>
 
 						<div id="Auditing" class="tab-content">
